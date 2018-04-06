@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2885c88be34c4e5390ff19d510121f80" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="clothModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Заказ" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Заказные_изделия" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Пользователь" Width="1.5" PointX="11" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Поставки" Width="1.5" PointX="10" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Поставщик_ткани" Width="1.5" PointX="7.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Поставщик_Фурнитуры" Width="1.5" PointX="7.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Роль" Width="1.5" PointX="8.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Склад_ткани" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Склад_фунитуры" Width="1.5" PointX="6" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Текущий_этап_выполнения" Width="1.5" PointX="10.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Ткани" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Фурнитура" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="clothModel.Фурнитура_изделия" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="clothModel.FK_Заказные_изделия_Заказ" ManuallyRouted="false" />
+        <AssociationConnector Association="clothModel.FK_Пользователь_Роль" ManuallyRouted="false" />
+        <AssociationConnector Association="clothModel.FK_Поставки_Поставщик_ткани" ManuallyRouted="false" />
+        <AssociationConnector Association="clothModel.FK_Поставки_Поставщик_Фурнитуры" ManuallyRouted="false" />
+        <AssociationConnector Association="clothModel.FK_Склад_ткани_Ткани" ManuallyRouted="false" />
+        <AssociationConnector Association="clothModel.FK_Склад_фунитуры_Фурнитура" ManuallyRouted="false" />
+        <AssociationConnector Association="clothModel.FK_Фурнитура_изделия_Фурнитура" ManuallyRouted="false" />
+        <AssociationConnector Association="clothModel.FK_Заказ_Пользователь" />
+        <AssociationConnector Association="clothModel.FK_Заказ_Пользователь1" />
+        <AssociationConnector Association="clothModel.FK_Склад_ткани_Поставки" />
+        <AssociationConnector Association="clothModel.FK_Склад_фунитуры_Поставки" />
+        <AssociationConnector Association="clothModel.FK_Заказ_Текущий_этап_выполнения" />
+        <AssociationConnector Association="clothModel.FK_Заказ_Ткани" />
+        <AssociationConnector Association="clothModel.FK_Заказ_Фурнитура" />
+        <EntityTypeShape EntityType="clothModel.Остатки_тканей" Width="1.5" PointX="5.25" PointY="12.125" />
+        <AssociationConnector Association="clothModel.FK_Остатки_тканей_Ткани" />
+        <EntityTypeShape EntityType="clothModel.Изделия" Width="1.5" PointX="0.75" PointY="6.75" />
+        <AssociationConnector Association="clothModel.FK_Заказные_изделия_Изделия" />
+        <AssociationConnector Association="clothModel.FK_Фурнитура_изделия_Изделия" />
+        <AssociationConnector Association="clothModel.Ткани_изделия" />
+        <EntityTypeShape EntityType="clothModel.Спецификация" Width="1.5" PointX="0.75" PointY="11.375" />
+        <AssociationConnector Association="clothModel.FK_Изделия_Спецификация" />
+        <EntityTypeShape EntityType="clothModel.Изделия_созданные_заказчиками" Width="1.5" PointX="10.375" PointY="7.75" />
+        <EntityTypeShape EntityType="clothModel.Окантовка" Width="1.5" PointX="12.375" PointY="7.75" />
+        <EntityTypeShape EntityType="clothModel.Пользовательская_фурнитура" Width="1.5" PointX="12.375" PointY="10.75" />
+        <EntityTypeShape EntityType="clothModel.Пользовательские_ткани" Width="1.5" PointX="12.375" PointY="12.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
